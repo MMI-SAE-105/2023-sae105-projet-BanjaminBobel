@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : Bobel
+- PRÉNOM : Banjamin
+- URL du site : https://precious-croquembouche-b9a990.netlify.app
+- URL FIGMA : https://www.figma.com/file/yvqBoFOfkU7ctALPUSinj3/PROJET-S1?type=design&node-id=0%3A1&mode=design&t=3ZX8FkLM385nys8m-1
 
 # Structure de départ pour le projet individuel.
 
