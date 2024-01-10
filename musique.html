@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data='{menuIsOpen:false}'>
+    <header >
+        <div class="header">
+            <a href="index.html"><img id="nav__logo"src="./public/img/artist.svg" alt=""></a>
+            <button class="header__button" x-show="!menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/MENU.svg" alt=""></button>
+            <button class="header__button" x-show="menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/CLOSE.svg" alt=""></button>
+        </div>
+        <nav class="menu" x-show="menuIsOpen">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/musique.html">Musique</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"> <a class="menu__link" href="/realisateur.html">Réalisateur</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/livres.html">Livres</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/film.html">Film</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/citation.html">Citation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main x-show="!menuIsOpen">
+        <h1 class="pages__title"> MUSIC </h1>
+        <img src="./public/img/image 4.png" >
+        <p>The song "Can You Hear The Music" was specially composed for the Oppenheimer film, contributing significantly to its mood and emotional impact. This haunting melody was created by Ludwig Goransson, a talented musician whose work is recognised in the music industry.</p>
+        <img src="./public/img/iamge 5.png" alt="">
+        <p>Music plays a crucial role in the film, accompanying key moments in Oppenheimer's story and reinforcing the emotions the director wishes to convey to the audience. "Can You Hear The Music" captures the essence of the film, creating an atmosphere that immerses viewers in the complex world of J. Robert Oppenheimer, the nuclear physicist who played a decisive role in the development of the first atomic bomb.
+            The addition of this original song to the film enriches the cinematic experience and allows the audience to connect more deeply with the captivating story of J. Robert Oppenheimer.
+        </p>
+        
+
+    <footer>
+        <a href="contact.html" class="footer__contact"><h3 >Contact</h3></a>
+        <a href="apropos.html" class="footer__contact"><h3 >A propos</h3></a>
+        <a href="autresprojets.html" class="footer__contact"><h3 >Autres projets</h3></a>
+        <p class="footer__infos">Banjamin Bobel <br/> Groupe A2 <br/>
+            Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département 
+MMI Montbéliard
+        <div class="footer__down">
+            <a href="index.html"><img src="./public/img/artist.svg" alt="" class="footer__down-logo"></a>
+            <div class="footer__down-social">
+                <a href=""><img src="./public/img/logommi.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

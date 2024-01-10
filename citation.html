@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data='{menuIsOpen:false}'>
+    <header >
+        <div class="header">
+            <a href="index.html"><img id="nav__logo"src="./public/img/artist.svg" alt=""></a>
+            <button class="header__button" x-show="!menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/MENU.svg" alt=""></button>
+            <button class="header__button" x-show="menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/CLOSE.svg" alt=""></button>
+        </div>
+        <nav class="menu" x-show="menuIsOpen">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/musique.html">Musique</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"> <a class="menu__link" href="/realisateur.html">Réalisateur</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/livres.html">Livres</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/film.html">Film</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/citation.html">Citation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main x-show="!menuIsOpen">
+        <h1 class="pages__title"> CITATION </h1>
+        <h2>“Je suis devenu la mort, le destructeur des mondes”</h2>
+
+        <p>La citation "Je suis devenu la mort, le destructeur des mondes" est souvent associée à J. Robert Oppenheimer, le physicien américain qui a joué un rôle clé dans le développement de la bombe atomique pendant la Seconde Guerre mondiale dans le cadre du Projet Manhattan. </p>
+
+        <img src="./public/img/image 13.png" >
+
+       <p> Oppenheimer a prononcé ces mots après avoir été témoin du premier essai d'une bombe atomique dans le désert du Nouveau-Mexique en juillet 1945. </p>
+
+       <img src="./public/img/image 14.png" >
+
+       <p>La phrase est une référence au texte sacré hindou, la Bhagavad-Gita, où le dieu Krishna révèle sa forme universelle à Arjuna, un prince guerrier. Dans ce contexte, Krishna dit : "Je suis le temps, le grand destructeur du monde, et je suis venu ici pour engager la destruction du monde."</p>
+    
+       <img src="./public/img/image 11.png" >
+
+       <p>Oppenheimer, ayant des connaissances en sanskrit et étant familiarisé avec les textes hindous, a paraphrasé cette ligne en réfléchissant à l'explosion atomique qu'il venait de voir. L'explosion a représenté pour lui la formidable et terrifiante puissance de destruction que l'humanité avait maintenant en main. La citation exprime l'effroi et la prise de conscience des implications profondes de son travail et de la technologie nucléaire en général. Cette prise de conscience poignante a souvent été citée comme un moment de réalisation profonde concernant les implications éthiques et morales de la création d'armes de destruction massive.</p>
+    
+    
+    
+    
+       <footer>
+        <a href="contact.html" class="footer__contact"><h3 >Contact</h3></a>
+        <a href="apropos.html" class="footer__contact"><h3 >A propos</h3></a>
+        <a href="autresprojets.html" class="footer__contact"><h3 >Autres projets</h3></a>
+        <p class="footer__infos">Banjamin Bobel <br/> Groupe A2 <br/>
+            Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département 
+MMI Montbéliard
+        <div class="footer__down">
+            <a href="index.html"><img src="./public/img/artist.svg" alt="" class="footer__down-logo"></a>
+            <div class="footer__down-social">
+                <a href=""><img src="./public/img/logommi.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

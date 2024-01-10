@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data='{menuIsOpen:false}'>
+    <header >
+        <div class="header">
+            <a href="index.html"><img id="nav__logo"src="./public/img/artist.svg" alt=""></a>
+            <button class="header__button" x-show="!menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/MENU.svg" alt=""></button>
+            <button class="header__button" x-show="menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/CLOSE.svg" alt=""></button>
+        </div>
+        <nav class="menu" x-show="menuIsOpen">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/musique.html">Musique</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"> <a class="menu__link" href="/realisateur.html">Réalisateur</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/livres.html">Livres</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/film.html">Film</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/citation.html">Citation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main x-show="!menuIsOpen">
+        <h1 class="pages__title"> RÉALISATEUR </h1>
+        <img src="./public/img/image6.png" >
+        <p>Christopher Nolan est un réalisateur, scénariste et producteur de cinéma britannique de renommée mondiale. Né le 30 juillet 1970 à Londres, il est connu pour son style distinctif, son utilisation ingénieuse de la narration non linéaire et sa capacité à créer des films qui défient souvent les conventions du genre.
+            Nolan a acquis une notoriété considérable grâce à des œuvres cinématographiques majeures telles que "Inception", "The Dark Knight Trilogy" (composée de "Batman Begins", "The Dark Knight" et "The Dark Knight Rises") et "Interstellar". Ses films se caractérisent par leur complexité intellectuelle, leur exploration des thèmes de la réalité et de la perception, ainsi que leur utilisation habile de l'ambiance sonore et visuelle.
+            Sa maîtrise de l'art cinématographique lui a valu de nombreux prix et distinctions, et il est considéré comme l'un des réalisateurs les plus influents de sa génération. Le travail de Christopher Nolan continue d'inspirer et de captiver les cinéphiles du monde entier, et son impact durable sur l'industrie cinématographique en fait une figure incontournable du septième art.
+        </p>
+
+        <h1 class="page__titre2"> AUTRES FILMS </h1>
+
+        <img src="./public/img/image7.png " alt="">
+
+    <footer>
+        <a href="contact.html" class="footer__contact"><h3 >Contact</h3></a>
+        <a href="apropos.html" class="footer__contact"><h3 >A propos</h3></a>
+        <a href="autresprojets.html" class="footer__contact"><h3 >Autres projets</h3></a>
+        <p class="footer__infos">Banjamin Bobel <br/> Groupe A2 <br/>
+            Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département 
+MMI Montbéliard
+        <div class="footer__down">
+            <a href="index.html"><img src="./public/img/artist.svg" alt="" class="footer__down-logo"></a>
+            <div class="footer__down-social">
+                <a href=""><img src="./public/img/logommi.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

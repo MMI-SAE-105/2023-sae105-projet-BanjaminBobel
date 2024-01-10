@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data='{menuIsOpen:false}'>
+    <header >
+        <div class="header">
+            <a href="index.html"><img id="nav__logo"src="./public/img/artist.svg" alt=""></a>
+            <button class="header__button" x-show="!menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/MENU.svg" alt=""></button>
+            <button class="header__button" x-show="menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/CLOSE.svg" alt=""></button>
+        </div>
+        <nav class="menu" x-show="menuIsOpen">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/musique.html">Musique</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"> <a class="menu__link" href="/realisateur.html">Réalisateur</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/livres.html">Livres</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/film.html">Film</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/citation.html">Citation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main x-show="!menuIsOpen">
+        <h1 class="pages__title"> A PROPOS </h1>
+        <p>
+            Bonjour ! Je m’appelle Banjamin, j’ai 18 ans et je suis étudiant en première année de BUT MMI (Métier du Multimédia et de l’Internet)  à Montbéliard. Ce site a pour but de présenter une réplique de film. Ce site a pour thème le film Oppenheimer.
+            <br>
+            <br> Glossaire
+            <br>
+            <br>J. Robert Oppenheimer : Physicien théorique américain, souvent appelé le "père de la bombe atomique" pour son rôle clé dans le Projet Manhattan, qui a développé les premières armes nucléaires pendant la Seconde Guerre mondiale.
+            <br>
+            <br>Projet Manhattan : Un projet de recherche et de développement pendant la Seconde Guerre mondiale aux États-Unis qui a produit les premières bombes atomiques.
+            <br>
+            <br>Bombe Atomique : Une arme explosive qui tire son énergie destructrice des réactions nucléaires, soit la fission soit une combinaison de fission et de fusion.
+            <br>
+            <br>Christopher Nolan : Réalisateur, scénariste et producteur de cinéma britannico-américain connu pour ses films complexes et conceptuellement originaux.
+            <br>
+            <br> Cillian Murphy : acteur irlandais qui a joué le rôle de J. Robert Oppenheimer dans le film "Oppenheimer" de Christopher Nolan.
+            <br>
+            <br> Biographie Épique : Un genre de film qui dépeint la vie d'un individu important ou d'un héros, souvent sur une longue période et avec un sens de grandeur ou d'importance historique.
+            <br>
+            <br>IMAX : Un système de projection de film qui a la capacité de montrer des images de beaucoup plus grande taille et résolution que les systèmes de projection conventionnels.
+        </p>
+       
+
+    <footer>
+        <a href="contact.html" class="footer__contact"><h3 >Contact</h3></a>
+        <a href="apropos.html" class="footer__contact"><h3 >A propos</h3></a>
+        <a href="autresprojets.html" class="footer__contact"><h3 >Autres projets</h3></a>
+        <p class="footer__infos">Banjamin Bobel <br/> Groupe A2 <br/>
+            Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département 
+MMI Montbéliard
+        <div class="footer__down">
+            <a href="index.html"><img src="./public/img/artist.svg" alt="" class="footer__down-logo"></a>
+            <div class="footer__down-social">
+                <a href=""><img src="./public/img/logommi.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
