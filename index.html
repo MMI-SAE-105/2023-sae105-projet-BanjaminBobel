@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/main">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data='{menuIsOpen:false}'>
+    <header >
+        <div class="header">
+            <a href="index.html"><img id="nav__logo"src="./public/img/artist.svg" alt=""></a>
+            <button class="header__button" x-show="!menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/MENU.svg" alt=""></button>
+            <button class="header__button" x-show="menuIsOpen" @click="menuIsOpen = !menuIsOpen"><img  src="./public/img/icon/CLOSE.svg" alt=""></button>
+        </div>
+        <nav class="menu" x-show="menuIsOpen">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/">Accueil</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/musique.html">Musique</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"> <a class="menu__link" href="/realisateur.html">Réalisateur</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/livres.html">Livres</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/film.html">Film</a></li>
+                <hr class="mmenu__separation">
+                <li class="menu__item"><a class="menu__link" href="/citatiom.html">Citation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main x-show="!menuIsOpen">
+        <h1 class="pages__title"> OPPENHEIMER </h1>
+        <img class="image__principale" src="./public/img/image1.png" >
+        <p class="citation">“Je suis devenu la mort, le destructeur des mondes”</p>
+        <button>DÉCOUVRIR</button></a>
+        <img src="./public/img/image 2.png" alt="">
+        <p>J. Robert Oppenheimer, de son nom complet Julius Robert Oppenheimer, était un physicien théoricien américain du XXe siècle, largement reconnu comme l'une des figures les plus influentes du domaine de la physique nucléaire. Né le 22 avril 1904 à New York, Oppenheimer est surtout célèbre pour son rôle essentiel dans le projet Manhattan, un effort scientifique massif pendant la Seconde Guerre mondiale visant à développer la première bombe atomique.
+            Oppenheimer a dirigé le laboratoire de Los Alamos, où il a dirigé l'équipe de scientifiques chargée de la conception et de la construction de la bombe atomique. Son travail révolutionnaire a conduit à la création de deux bombes atomiques, "Little Boy" et "Fat Man", larguées respectivement sur Hiroshima et Nagasaki en août 1945, mettant ainsi fin à la guerre en Asie.
+            Après la guerre, Oppenheimer a continué à jouer un rôle majeur dans le développement de la science nucléaire et a également été un défenseur de la maîtrise des armements. Son histoire fascinante et complexe mérite une exploration approfondie, et c'est précisément ce que notre site s'engage à faire. Rejoignez-nous pour plonger dans la vie et l'héritage de cet homme extraordinaire.
+        </p>
+        <img src="./public/img/image3.png" alt="">
+        
+    <footer>
+        <a href="" class="footer__contact"><h3 >Contact</h3></a>
+        <a href="" class="footer__contact"><h3 >A propos</h3></a>
+        <a href="" class="footer__contact"><h3 >Autres projets</h3></a>
+        <p class="footer__infos">Banjamin Bobel <br/> Groupe A2 <br/>
+            Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au département 
+MMI Montbéliard
+        <div class="footer__down">
+            <a href="index.html"><img src="./public/img/artist.svg" alt="" class="footer__down-logo"></a>
+            <div class="footer__down-social">
+                <a href=""><img src="./public/img/icon/socials/insta.svg" alt=""></a>
+                <a href=""><img src="./public/img/icon/socials/Twitter.svg" alt=""></a>
+                <a href=""><img src="./public/img/icon/socials/facebook.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
